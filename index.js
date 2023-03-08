@@ -11,4 +11,4 @@ class GetterFileUpload {
     }
 }
 
-const c = new GetterFileUpload('http://localhost:5000')
+export default GetterFileUpload
