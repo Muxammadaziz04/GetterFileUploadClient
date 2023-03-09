@@ -4,10 +4,20 @@ import FormData from 'form-data'
 async function uploadImage(image, folderName) {
     try {
         const data = new FormData();
+        
+        if(!this.url) return {
+            error: true,
+            message: 'URL is not found',
+            url: null
+        }
+        
+        if (!image) return {
+            error: true,
+            message: 'No file uploaded',
+            url: null
+        }
 
-        if(!image) return
-
-        if(image?.data) {
+        if (image?.data) {
             data.append('image', image?.data, image?.name)
         } else {
             data.append('image', image)
@@ -21,7 +31,15 @@ async function uploadImage(image, folderName) {
 
         return res?.data
     } catch (error) {
-        console.log(error);
+        return error.response !== undefined ? {
+            error: true,
+            message: error.response?.data?.message,
+            url: null
+        } : {
+            error: true,
+            message: error.message,
+            url: null
+        }
     }
 }
 

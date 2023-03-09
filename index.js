@@ -2,7 +2,7 @@ import uploadImage from './src/uploadImage.js'
 import uploadVideo from './src/uploadVideo.js'
 import removeFile from './src/removeFile.js'
 
-class GetterFileUpload {
+class GetterFileUpload1 {
     constructor(url) {
         this.url = url
         this.uploadImage = uploadImage
@@ -11,4 +11,4 @@ class GetterFileUpload {
     }
 }
 
-export default GetterFileUpload
+export default GetterFileUpload1
