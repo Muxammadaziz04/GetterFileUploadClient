@@ -1,5 +1,5 @@
-const axios = requrie('axios')
-const FormData = requrie('form-data')
+const axios = require('axios')
+const FormData = require('form-data')
 
 async function uploadVideo(video, folderName) {
     try {

@@ -1,4 +1,4 @@
-const axios = requrie('axios')
+const axios = require('axios')
 
 async function removeFile(url) {
     try {
