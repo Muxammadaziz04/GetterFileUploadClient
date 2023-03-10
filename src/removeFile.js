@@ -1,4 +1,4 @@
-import axios from "axios";
+const axios = requrie('axios')
 
 async function removeFile(url) {
     try {
@@ -32,4 +32,4 @@ async function removeFile(url) {
     }
 }
 
-export default removeFile
+module.exports = removeFile

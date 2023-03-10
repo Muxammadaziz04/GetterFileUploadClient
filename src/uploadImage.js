@@ -1,5 +1,5 @@
-import axios from 'axios'
-import FormData from 'form-data'
+const axios = requrie('axios')
+const FormData = requrie('form-data')
 
 async function uploadImage(image, folderName) {
     try {
@@ -43,4 +43,4 @@ async function uploadImage(image, folderName) {
     }
 }
 
-export default uploadImage
+module.exports = uploadImage

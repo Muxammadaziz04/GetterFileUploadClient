@@ -1,6 +1,6 @@
-import uploadImage from './src/uploadImage.js'
-import uploadVideo from './src/uploadVideo.js'
-import removeFile from './src/removeFile.js'
+const uploadImage = require('./src/uploadImage.js')
+const uploadVideo = require('./src/uploadVideo.js')
+const removeFile = require('./src/removeFile.js')
 
 class GetterFileUpload {
     constructor(url) {
@@ -11,4 +11,4 @@ class GetterFileUpload {
     }
 }
 
-export default GetterFileUpload
+module.exports = GetterFileUpload

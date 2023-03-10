@@ -1,5 +1,5 @@
-import axios from 'axios'
-import FormData from 'form-data'
+const axios = requrie('axios')
+const FormData = requrie('form-data')
 
 async function uploadVideo(video, folderName) {
     try {
@@ -43,4 +43,4 @@ async function uploadVideo(video, folderName) {
     }
 }
 
-export default uploadVideo
+module.exports = uploadVideo
